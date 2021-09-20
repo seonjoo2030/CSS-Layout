@@ -1,15 +1,22 @@
-.wrapper {
+.father {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    /*flex-direction 에 따라 방향을 설정하고 싶을 때, 높이를 반드시 설정해 주어야 한다.*/
-    height: 200vh;
+    height: 100vh;
 }
 
-.box {
+.child {
     width: 200px;
     height: 200px;
     background: peru;
     color: white;
+    font-size: 50px;
+}
+
+.child:nth-child(1) {
+    order: 2;
+    align-self: center;
+}
+
+.child:nth-child(2) {
+    order: 3;
 }
