@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-around;
     height: 200vh;
-    flex-wrap: wrap;
     align-content: space-around;
 }
 
@@ -15,4 +14,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.child:nth-child(2) {
+    background: black;
+    flex-shrink: 3;
+    flex-grow: 1;
+}
+
+.child:nth-child(3) {
+    flex-grow: 3;
 }
