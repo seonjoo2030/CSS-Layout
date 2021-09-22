@@ -1,8 +1,7 @@
 .father {
     display: flex;
-    justify-content: space-around;
-    height: 100vh;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .child {
@@ -15,7 +14,7 @@
     align-items: center;
 }
 
-.child:nth-child(2) {
-    background: black;
-    flex-grow: 1;
+.child:nth-child(4)
+{
+    margin-top: 10px;
 }
