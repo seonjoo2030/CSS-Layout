@@ -1,13 +1,12 @@
 .father {
     display: flex;
     justify-content: space-around;
-    height: 200vh;
-    align-content: space-around;
+    height: 100vh;
+    width: 100%;
 }
 
 .child {
-    width: 200px;
-    height: 200px;
+    flex-basis: 30%;
     background: peru;
     color: white;
     font-size: 50px;
@@ -18,10 +17,5 @@
 
 .child:nth-child(2) {
     background: black;
-    flex-shrink: 3;
     flex-grow: 1;
-}
-
-.child:nth-child(3) {
-    flex-grow: 3;
 }
